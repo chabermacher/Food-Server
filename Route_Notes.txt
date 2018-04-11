@@ -1,0 +1,4 @@
+/ - 404 page
+GET / with parameters (location, category) - call YELP API and get 10 restaurants that meet that location, store in DB and send to client as response. 
+POST /ID and status - store status in DB.
+GET /RESULTS - return all with thumbs up. 
