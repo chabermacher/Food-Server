@@ -1,9 +1,9 @@
 const router = require("express").Router();
-const articleController = require("../../controllers/foodController");
+const foodController = require("../../controllers/foodController");
 
 // Matches with "/api/food"
 router
   .route("/")
-  .get(articleController.findAll);
+  .get(foodController.getRestaurants);
 
 module.exports = router;

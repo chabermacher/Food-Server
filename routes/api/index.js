@@ -1,9 +1,9 @@
 const router = require("express").Router();
-const articleRoutes = require("./articles");
+const storageRoutes = require("./storage");
 const foodRoutes = require("./food");
 
 // NYT routes
-router.use("/articles", articleRoutes);
+// router.use("/articles", articleRoutes);
 
 router.use("/food", foodRoutes);
 
