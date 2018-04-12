@@ -7,7 +7,7 @@ const db = require("../models");
 module.exports = {
   getRestaurants: function(req, res) {
     // put the bit that calls the yelp API here. 
-  }
+  },
 
   findAll: function(req, res) {
     const params = Object.assign(
