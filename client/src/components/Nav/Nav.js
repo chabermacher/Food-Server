@@ -18,7 +18,7 @@ const Nav = () => (
           <span className="icon-bar" />
         </button>
         <Link className="navbar-brand" to="/">
-          NYT-React
+          FoodServer
         </Link>
       </div>
       <div className="collapse navbar-collapse navbar-ex1-collapse">
