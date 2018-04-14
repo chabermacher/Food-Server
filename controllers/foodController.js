@@ -23,6 +23,48 @@ module.exports = {
         res.json(response.data);
       });
   },
+  
+  getRestaurantById: function(req, res) {
+    let restaurantId = req.params.id;
+
+    // Make a call to the db to grab all the info for the restaurant with that ID
+
+    // Then:
+    let responseObject = {
+      id: req.params.id,
+      message: `Here is the info for restaurant with id ${restaurantId}`
+    };
+
+    res.json(responseObject);
+  },
+
+  storeLike: function(req, res) {
+    let restaurantId = req.params.id;
+    // make a call to the db to mark the "liked" or "swiped" (or whatever field is storing the "liked" status)
+    // of the restaurants from 0 to 1
+
+    // Then:
+    let responseObject = {
+      id: req.params.id,
+      message: `You have 'liked' restaurant with id ${restaurantId}`
+    };
+
+    res.json(responseObject);
+  },
+
+  getAllLikedRestaurants: function(req, res) {
+    // make a call to the db to retrieve all the user's restaurants with "liked" values of 1
+
+    // Then, return the data
+    
+    let responseObject = {
+      id: req.params.id,
+      message: `Here are all of your liked restaurants`
+    };
+
+    res.json(responseObject);
+
+  },
 
   findAll: function(req, res) {
     const params = Object.assign(
