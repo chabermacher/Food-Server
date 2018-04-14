@@ -7,7 +7,7 @@ router.use("/api", apiRoutes);
 
 // If no API routes are hit, send the React app
 router.use((req, res) =>
-  res.sendStatus(500)
+  res.send('API Calls Only!')
 );
 
 module.exports = router;
